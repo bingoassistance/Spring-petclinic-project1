@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage(scm){
             steps{
-                git 'https://github.com/sriison/spring-petclinic.git'
+                git 'https://github.com/bingoassistance/Spring-petclinic-project1.git'
             }
         }
         
@@ -18,7 +18,7 @@ pipeline {
         stage(imagebuild){
             steps{
                 sh '''
-                sudo docker build -t srini-test .
+                sudo docker build -t test .
                 '''
             }
         }
